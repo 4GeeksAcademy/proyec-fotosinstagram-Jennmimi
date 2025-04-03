@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--link iconos-->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div> <!--Icono + Instagram-->
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <form class="d-flex" role="search">
+                    <!-- Button derecho -->
+                    <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        create a new post
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    caption:
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Comments</label>
+                                    </div>
+                                    <button type="button" class="btn btn-light mt-2"> <i class="fa fa-camera"></i></button>
+                                    <button type="button" class="btn btn-light mt-2"><i class="fa fa-map-pin"></i></button>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cuadros desplegables parte derecha-->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accecibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">log out</a></li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+        </nav>
+
+        <ul class="nav nav-tabs d-flex justify-content-center id=" myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    <i class="fa fa-square"></i>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    <i class="fa fa-table"></i>
+                </button>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-4">
+
+                        <img src="https://plus.unsplash.com/premium_photo-1707353400196-06cc5a377467?q=80&w=400"
+                            class="img-fluid img-thumbnail w-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://www.carlosllanocatedra.org/hs-fs/hubfs/Stock%20images/Portrait%20of%20an%20extended%20family%20with%20their%20pet%20dog%20sitting%20at%20the%20park.jpeg?width=600&name=Portrait%20of%20an%20extended%20family%20with%20their%20pet%20dog%20sitting%20at%20the%20park.jpeg"
+                            class="img-fluid img-thumbnail w-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/495482864/photo/woman-sitting-on-a-rock-outcropping.webp?s=1024x1024&w=is&k=20&c=l_-8fCvlYByqNTE-HKBye93hdgOAaqDoZ1DImPDgqLE="
+                            class="img-thumbnail w-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?cs=srgb&dl=pexels-souvenirpixels-1619317.jpg&fm=jpg"
+                            class="img-thumbnail w-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://st3.depositphotos.com/1277251/14557/i/450/depositphotos_145571801-stock-photo-graduation-hat-with-degree-paper.jpg"
+                            class="img-thumbnail w-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/gettyimages-1272468011.webp?w=1600&h=1068"
+                            class="img-thumbnail w-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://st3.depositphotos.com/13194036/16049/i/450/depositphotos_160496350-stock-photo-businesswoman-using-laptop.jpg"
+                            class="img-thumbnail w-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://res.cloudinary.com/ddjuftfy2/image/upload/f_webp,c_fill/multitenacy/articles/2023-05-23-01-18-10-3646cbd12e2e7a.webp"
+                            class="img-fluid img-thumbnailw-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kmaw4aT9JIdCHYv8av2oxW1IMVXeggyKog&s"
+                            class="img-fluid img-thumbnail w-100" style="aspect-ratio: 1/1; object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <!-- aqui va el codigo de instagram pagina 2-->
+            <div class=" mt-4" style="margin-left: 400px;">
+                <div class="row my-4">
+                    <div class="col-md-6 bg-white p-3 rounded shadow mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>My Crazy dog Spark!</h5>
+                            <small>08/26</small>
+                        </div>
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAEwQab3oo2_2V7uzp0BtsooHE-68o6L7tlQ&s"
+                            class="card-img-top" alt="">
+                        <div class="p">
+                            <strong>204 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                    <!--abajo sigue la 2da publicacion-->
+                    <div class="row">
+                        <div class="col-md-6 bg-white p-3 rounded shadow mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5>The greatness of Croatia</h5>
+                                <small>04/09</small>
+                            </div>
+                            <img src="https://cms.w2m.com/.imaging/is9/Master-Data/Destinations/Europa/Croacia/Dubrovnik/Images/croacia-dubrovnik-ciudad-historica-panoramica-rosa-flor.jpg"
+                                class="card-img-top" alt="">
+                            <div class="p">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+                        <!--abajo sigue 3ra publicacion-->
+                        <div class="row">
+                            <div class="col-md-6 bg-white p-3 rounded shadow mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h5>Great Formula 1 race!</h5>
+                                    <small>06/10</small>
+                                </div>
+                                <img src="https://www.thedrive.com/wp-content/uploads/2024/05/05/Norris-Win-Hero-1.jpg?quality=85"
+                                    class="card-img-top" alt="">
+                                <div class="p">
+                                    <strong>204 Likes</strong>
+                                    <p>This is an example of a very good photo that you can post on instagram</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+                    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+                    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
